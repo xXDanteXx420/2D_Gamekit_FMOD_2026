@@ -5,7 +5,7 @@
 			<value>Red</value>
 		</property>
 		<property name="name">
-			<value>PlayerWeaponRanged</value>
+			<value>player_weapon_ranged</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -107,7 +107,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{29dec258-51a5-4585-a315-867d3e971e84}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>gunshots</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{1fcfc241-92ec-4377-8d77-08cdb20fec93}</destination>

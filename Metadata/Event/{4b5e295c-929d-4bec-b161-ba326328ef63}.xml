@@ -5,7 +5,7 @@
 			<value>Magenta Light 1</value>
 		</property>
 		<property name="name">
-			<value>pickup</value>
+			<value>pickup_key</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -53,7 +53,7 @@
 			<destination>{13b106c2-065f-4d28-81f2-84e9405d1680}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{da98d73d-c290-45d6-a67b-2ebdc5eb3543}</destination>
+			<destination>{b37667a9-f90e-4ca0-bbb2-c78288c7f9f7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{c2efede6-3ec3-40aa-a8b5-c54cae0f763b}" />

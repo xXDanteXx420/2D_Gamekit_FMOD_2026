@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{63674261-96f0-4d48-9996-7d09d0478f33}">
 		<property name="assetPath">
-			<value>TOYMech_Slinky Tambourine Floor Drop Laser_SonyD100_07.wav</value>
+			<value>Laser/TOYMech_Slinky Tambourine Floor Drop Laser_SonyD100_07.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>192</value>

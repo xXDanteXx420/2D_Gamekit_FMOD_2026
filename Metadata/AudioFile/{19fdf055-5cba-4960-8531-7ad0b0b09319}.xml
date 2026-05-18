@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{55827d30-2d31-494b-893f-ffcb608c0efa}">
+	<object class="AudioFile" id="{19fdf055-5cba-4960-8531-7ad0b0b09319}">
 		<property name="assetPath">
-			<value>Laser/TOYMech_Slinky Tambourine Floor Drop Laser_SonyD100_01.wav</value>
+			<value>ELLEN VOICE/ellen_land.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>192</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>2.34728125</value>
+			<value>0.37648526077097505</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{87141b2c-14ae-4bd0-b17b-6338c22d2609}</destination>

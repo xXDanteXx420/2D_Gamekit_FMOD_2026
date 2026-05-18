@@ -8,7 +8,7 @@
 			<value>player_hurt</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bee25789-f926-47a4-a872-a1e426e0af31}</destination>
@@ -56,17 +56,24 @@
 			<destination>{c80db661-3884-4d2a-a4fc-124db3b7aaec}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{da98d73d-c290-45d6-a67b-2ebdc5eb3543}</destination>
+			<destination>{8e04c712-bed2-4081-8178-56ee3c0080df}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{86f7174f-a984-4ff6-8c36-cca76d630eed}" />
 	<object class="MarkerTrack" id="{66fe2169-2ba8-4a48-9258-bc91ed9feab9}" />
 	<object class="GroupTrack" id="{f3b38a2d-f5c7-40bd-97f7-0c655a150877}">
+		<relationship name="modules">
+			<destination>{40a5ebfd-f687-43b9-9cb9-b17c68ac36b6}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{130a014c-aae6-4ee4-9d0d-475a76a2fd32}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{6ce7f170-472c-4870-bc40-8f8ad736fe6d}" />
+	<object class="Timeline" id="{6ce7f170-472c-4870-bc40-8f8ad736fe6d}">
+		<relationship name="modules">
+			<destination>{40a5ebfd-f687-43b9-9cb9-b17c68ac36b6}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{b63c5fd5-2a9e-410c-b612-4b974a08c7cb}">
 		<relationship name="effectChain">
 			<destination>{7b7a2b8e-5a80-4238-b0b9-40cc791057fb}</destination>
@@ -84,6 +91,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c80db661-3884-4d2a-a4fc-124db3b7aaec}" />
+	<object class="SingleSound" id="{40a5ebfd-f687-43b9-9cb9-b17c68ac36b6}">
+		<property name="length">
+			<value>0.37648526077097505</value>
+		</property>
+		<property name="volume">
+			<value>-1</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{dabbc922-eaa6-4c2b-8041-def3cf49966d}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{130a014c-aae6-4ee4-9d0d-475a76a2fd32}">
 		<property name="name">
 			<value>hurt_VA</value>

@@ -8,7 +8,7 @@
 			<value>player_land</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bee25789-f926-47a4-a872-a1e426e0af31}</destination>
@@ -57,7 +57,7 @@
 			<destination>{549b5050-5658-40af-90c9-78bb8740157e}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{da98d73d-c290-45d6-a67b-2ebdc5eb3543}</destination>
+			<destination>{8e04c712-bed2-4081-8178-56ee3c0080df}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{fce105bc-224a-4aea-b18d-05f3c738fdaa}" />
@@ -68,11 +68,18 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{090e442c-4897-40d3-956e-dc89e218f968}">
+		<relationship name="modules">
+			<destination>{2ff971b7-a0ed-432f-9c1c-9f661a938606}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{f0cff299-150b-4c84-b793-43e1d5f3e68d}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{96fa902d-2a59-44d1-b384-4b1e75e7868c}" />
+	<object class="Timeline" id="{96fa902d-2a59-44d1-b384-4b1e75e7868c}">
+		<relationship name="modules">
+			<destination>{2ff971b7-a0ed-432f-9c1c-9f661a938606}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{a993ce80-f59e-4b45-990e-292c74fa98f2}">
 		<relationship name="effectChain">
 			<destination>{4f22ea6c-ac18-444e-a4ef-64a6fad2509a}</destination>
@@ -102,6 +109,17 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{a993ce80-f59e-4b45-990e-292c74fa98f2}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{2ff971b7-a0ed-432f-9c1c-9f661a938606}">
+		<property name="length">
+			<value>0.37648526077097505</value>
+		</property>
+		<property name="volume">
+			<value>-11.5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{19fdf055-5cba-4960-8531-7ad0b0b09319}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{f0cff299-150b-4c84-b793-43e1d5f3e68d}">

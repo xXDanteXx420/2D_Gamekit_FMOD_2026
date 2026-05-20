@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{6b064239-bacc-43e6-bbcd-684dd9c72a7f}">
+		<property name="color">
+			<value>Magenta Light 1</value>
+		</property>
 		<property name="name">
 			<value>pickup_health</value>
 		</property>
@@ -43,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{32ceb4d3-048a-472d-93ea-a720b07a4e0e}">
+		<property name="color">
+			<value>Magenta Light 1</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{dd0b6c53-a38c-4437-a02c-1aeef1971996}</destination>
 		</relationship>

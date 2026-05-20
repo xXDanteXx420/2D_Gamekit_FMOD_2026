@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{91e20298-7809-4703-a882-a58bf98b3a12}">
 		<property name="name">
-			<value>amb_acidpool_splash</value>
+			<value>acidpool_splash</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{3a8004e0-e740-4ca9-852c-1bc8130181d9}</destination>
+			<destination>{7e9537f7-c3ef-46f6-86e2-eb0dec56af17}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{d0b3db64-4ce7-4393-a07a-9066b20e2926}</destination>

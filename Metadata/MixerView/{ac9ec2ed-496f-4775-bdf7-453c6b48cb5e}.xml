@@ -7,7 +7,6 @@
 		<relationship name="assignedStrips">
 			<destination>{d58530e4-6424-47e3-901f-9e83de7e73be}</destination>
 			<destination>{917a16ad-e825-43e0-9ef6-939347bb86da}</destination>
-			<destination>{d5fbcc7c-a4c0-477a-a846-5eb36307cd3c}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{cf6fa574-15a6-418b-a5cd-cd7d92939021}</destination>

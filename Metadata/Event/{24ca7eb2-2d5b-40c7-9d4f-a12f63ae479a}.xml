@@ -8,7 +8,7 @@
 			<value>AmbCrickets</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{3a8004e0-e740-4ca9-852c-1bc8130181d9}</destination>
@@ -133,7 +133,6 @@
 	<object class="MixerBusEffectChain" id="{aee643ea-6dd2-43c4-912b-4b4b6e6641fa}">
 		<relationship name="effects">
 			<destination>{2414c971-f392-447b-89d3-e429c17e94c7}</destination>
-			<destination>{37042342-f123-4e0b-83f7-36cbd4c4b4be}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{87292575-0f88-4f7a-aafc-471b9e6a7cad}" />
@@ -145,6 +144,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{21b7206d-e92a-45e7-8616-aa50730c450c}" />
 	<object class="MixerBusFader" id="{2414c971-f392-447b-89d3-e429c17e94c7}" />
-	<object class="SpatialiserEffect" id="{37042342-f123-4e0b-83f7-36cbd4c4b4be}" />
 	<object class="MixerBusFader" id="{d9d72e37-a4a0-472e-a415-106ffff9d8fd}" />
 </objects>

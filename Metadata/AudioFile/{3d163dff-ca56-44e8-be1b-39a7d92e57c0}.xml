@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{5889d7d8-ba11-46a0-9100-4de4707e9076}">
+	<object class="AudioFile" id="{3d163dff-ca56-44e8-be1b-39a7d92e57c0}">
 		<property name="assetPath">
-			<value>Laser/TOYMech_Slinky Tambourine Floor Drop Laser_SonyD100_02.wav</value>
+			<value>foley/cloth_003.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>192</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>2.3477343749999999</value>
+			<value>0.43408163265306121</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{87141b2c-14ae-4bd0-b17b-6338c22d2609}</destination>

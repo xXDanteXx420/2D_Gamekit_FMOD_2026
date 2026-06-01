@@ -7,7 +7,11 @@ Value 0 = Cricket sounds
 Value 0.35 - 1 = Intense Cricket Sounds
 Bird Intensiry Parameter:
 Value 0 = Bird Sounds
-Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
+Value 0.5 - 1 = High pitched bird sounds ontop of the original
+Wind Parameter:
+Value 0 = only noise
+Value 0.05 = more wind
+Value 0.4 = alot of wind</value>
 		</property>
 		<property name="color">
 			<value>Purple</value>
@@ -39,6 +43,8 @@ Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
 		<relationship name="groupTracks">
 			<destination>{0cb3ad5d-128e-461a-8376-4aa0522c0ae8}</destination>
 			<destination>{0a9d8fdc-c51e-4f06-b13a-75370de0fb7d}</destination>
+			<destination>{a6b0ddde-0e37-4490-9b8f-f31ad429a8e8}</destination>
+			<destination>{3eb5571f-a9c1-45b9-9a5b-114442a01ae8}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{ca45f799-db53-4c79-8795-f903428f5c85}</destination>
@@ -46,6 +52,7 @@ Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
 		<relationship name="parameters">
 			<destination>{27e3615c-82e7-4385-b725-c79db68d5ca1}</destination>
 			<destination>{f6a9b4b7-5a22-4bbc-8938-a11261dddede}</destination>
+			<destination>{f6495ba6-ec8b-4fe6-81b4-6e8924eeb5d6}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{0e41109f-2d01-4da2-8a51-0de32d7fc467}</destination>
@@ -92,6 +99,23 @@ Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
 			<destination>{fae5016f-1c69-4ec2-908e-372b2085e072}</destination>
 		</relationship>
 	</object>
+	<object class="GroupTrack" id="{a6b0ddde-0e37-4490-9b8f-f31ad429a8e8}">
+		<relationship name="modules">
+			<destination>{d66d638d-050a-4829-b263-b3ebde3a04cc}</destination>
+			<destination>{12b5b064-10bc-431c-a619-adea3783b2b5}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{281dad16-acde-439e-9f2f-abbca077c16e}</destination>
+		</relationship>
+	</object>
+	<object class="GroupTrack" id="{3eb5571f-a9c1-45b9-9a5b-114442a01ae8}">
+		<relationship name="modules">
+			<destination>{c4ec48df-0d39-41ce-9e39-3101c643fe34}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{b9955966-e7b0-4009-a5d0-9c85bf3f2ba2}</destination>
+		</relationship>
+	</object>
 	<object class="Timeline" id="{ca45f799-db53-4c79-8795-f903428f5c85}">
 		<property name="isProxyEnabled">
 			<value>false</value>
@@ -113,6 +137,16 @@ Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
 		</relationship>
 		<relationship name="preset">
 			<destination>{a27d3a39-802d-454b-82f1-db5a7c965500}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{f6495ba6-ec8b-4fe6-81b4-6e8924eeb5d6}">
+		<relationship name="modules">
+			<destination>{d66d638d-050a-4829-b263-b3ebde3a04cc}</destination>
+			<destination>{12b5b064-10bc-431c-a619-adea3783b2b5}</destination>
+			<destination>{c4ec48df-0d39-41ce-9e39-3101c643fe34}</destination>
+		</relationship>
+		<relationship name="preset">
+			<destination>{22d1a33d-c6c5-4e4d-8c5b-e5253167ab2d}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{bf918411-f442-46d9-9ec5-30b6af64d516}">
@@ -246,6 +280,97 @@ Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
 			<destination>{bf918411-f442-46d9-9ec5-30b6af64d516}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{d66d638d-050a-4829-b263-b3ebde3a04cc}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
+		<property name="length">
+			<value>0.55000000000000004</value>
+		</property>
+		<property name="volume">
+			<value>3</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="fadeInCurve">
+			<destination>{063ec679-1ecc-415f-985e-fa926fafd73d}</destination>
+		</relationship>
+		<relationship name="fadeOutCurve">
+			<destination>{a7ecbbb1-d3f1-4000-b575-2a349ef5f616}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{386aa483-d3bb-4aeb-895e-039673a4a493}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{12b5b064-10bc-431c-a619-adea3783b2b5}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
+		<property name="start">
+			<value>0.40000000000000002</value>
+		</property>
+		<property name="length">
+			<value>0.59999999999999998</value>
+		</property>
+		<property name="volume">
+			<value>4</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="fadeInCurve">
+			<destination>{56a7f62c-0ccc-444c-a287-6d3751c42c82}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{c588b8f5-b0e1-4fb6-912e-a3ce9456c2de}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{281dad16-acde-439e-9f2f-abbca077c16e}">
+		<property name="volume">
+			<value>-15.5</value>
+		</property>
+		<property name="name">
+			<value>Wind</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{a0ef15a6-7ac7-4b4b-b6d8-3378f2b4a167}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{d7e1f678-fa9d-4e4d-9fbe-35432f7ed764}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{bf918411-f442-46d9-9ec5-30b6af64d516}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{c4ec48df-0d39-41ce-9e39-3101c643fe34}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{3f1e4673-10ef-4b60-990e-a3138feed032}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{b9955966-e7b0-4009-a5d0-9c85bf3f2ba2}">
+		<property name="volume">
+			<value>-11</value>
+		</property>
+		<property name="name">
+			<value>Noise</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{2b7a4199-ca5b-4513-b658-d54e932d0177}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{76d64eb8-d2a2-452f-a15c-b03bb571bfc9}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{bf918411-f442-46d9-9ec5-30b6af64d516}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{aee643ea-6dd2-43c4-912b-4b4b6e6641fa}">
 		<relationship name="effects">
 			<destination>{2414c971-f392-447b-89d3-e429c17e94c7}</destination>
@@ -304,6 +429,50 @@ Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{74ca55c8-855d-49a1-98fc-e2566bb3b4ff}" />
+	<object class="FadeCurve" id="{063ec679-1ecc-415f-985e-fa926fafd73d}">
+		<relationship name="startPoint">
+			<destination>{d1acfaa0-d52e-4837-8d36-01ceb2aab4e9}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{e31133af-820a-45e7-bdcf-c1df1fda041d}</destination>
+		</relationship>
+	</object>
+	<object class="FadeCurve" id="{a7ecbbb1-d3f1-4000-b575-2a349ef5f616}">
+		<relationship name="startPoint">
+			<destination>{9dc62814-4059-4f16-8dd4-16769e7ca124}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{2a6cc8b6-7927-48c4-ac42-f1958dea7d13}</destination>
+		</relationship>
+		<relationship name="relatedModule">
+			<destination>{12b5b064-10bc-431c-a619-adea3783b2b5}</destination>
+		</relationship>
+	</object>
+	<object class="FadeCurve" id="{56a7f62c-0ccc-444c-a287-6d3751c42c82}">
+		<relationship name="startPoint">
+			<destination>{482c2184-75b9-44de-8de3-42195212f62b}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{0c92a330-75e2-4f18-9b7f-99bf50c578e1}</destination>
+		</relationship>
+		<relationship name="relatedModule">
+			<destination>{d66d638d-050a-4829-b263-b3ebde3a04cc}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{a0ef15a6-7ac7-4b4b-b6d8-3378f2b4a167}">
+		<relationship name="effects">
+			<destination>{f559deee-4034-4f42-8148-53adeea3aa04}</destination>
+			<destination>{5b0ca99f-8f8a-418b-bf04-3096afe8237f}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{d7e1f678-fa9d-4e4d-9fbe-35432f7ed764}" />
+	<object class="MixerBusEffectChain" id="{2b7a4199-ca5b-4513-b658-d54e932d0177}">
+		<relationship name="effects">
+			<destination>{977ebd6b-0ff4-4d2a-85b5-84bad168d859}</destination>
+			<destination>{1a110d9a-beb0-4219-81db-b60e1b34ea11}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{76d64eb8-d2a2-452f-a15c-b03bb571bfc9}" />
 	<object class="MixerBusFader" id="{2414c971-f392-447b-89d3-e429c17e94c7}" />
 	<object class="AutomationPoint" id="{3751addf-8978-4a0f-aca1-8d58aed7515e}">
 		<property name="position">
@@ -384,6 +553,81 @@ Value 0.5 - 1 = High pitched bird sounds ontop of the original</value>
 		</property>
 		<property name="wetLevel">
 			<value>0.5</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{d1acfaa0-d52e-4837-8d36-01ceb2aab4e9}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.2547189</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{e31133af-820a-45e7-bdcf-c1df1fda041d}">
+		<property name="position">
+			<value>0.050000000000000003</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{9dc62814-4059-4f16-8dd4-16769e7ca124}">
+		<property name="position">
+			<value>0.40000000000000002</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{2a6cc8b6-7927-48c4-ac42-f1958dea7d13}">
+		<property name="position">
+			<value>0.55000000000000004</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{482c2184-75b9-44de-8de3-42195212f62b}">
+		<property name="position">
+			<value>0.40000000000000002</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.2547189</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{0c92a330-75e2-4f18-9b7f-99bf50c578e1}">
+		<property name="position">
+			<value>0.55000000000000004</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{f559deee-4034-4f42-8148-53adeea3aa04}" />
+	<object class="MultibandEqEffect" id="{5b0ca99f-8f8a-418b-bf04-3096afe8237f}">
+		<property name="frequencyA">
+			<value>261.100159</value>
+		</property>
+		<property name="qualityA">
+			<value>0.581413805</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{977ebd6b-0ff4-4d2a-85b5-84bad168d859}" />
+	<object class="MultibandEqEffect" id="{1a110d9a-beb0-4219-81db-b60e1b34ea11}">
+		<property name="frequencyA">
+			<value>118.816147</value>
+		</property>
+		<property name="qualityA">
+			<value>0.539551735</value>
 		</property>
 	</object>
 </objects>

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{91e20298-7809-4703-a882-a58bf98b3a12}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>acidpool_splash</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{7e9537f7-c3ef-46f6-86e2-eb0dec56af17}</destination>
+			<destination>{ed0926ed-0e2e-4cf6-8332-8181a839d003}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{d0b3db64-4ce7-4393-a07a-9066b20e2926}</destination>
@@ -116,6 +119,7 @@
 	<object class="MixerBusEffectChain" id="{9c647d6f-a70f-43c3-974d-449de5ce4f65}">
 		<relationship name="effects">
 			<destination>{c763f4d6-e12e-46bf-89c3-c763ebc010f1}</destination>
+			<destination>{7bb2ffdc-98d2-4b56-a163-01505627c262}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5f02c2d5-cd64-4f85-980d-dcc2844d268c}" />
@@ -132,10 +136,12 @@
 		<relationship name="effects">
 			<destination>{d84f7480-e609-403f-adfc-926edc552c69}</destination>
 			<destination>{2702a6a9-a599-4161-b3e4-1c134a71af90}</destination>
+			<destination>{c98e57fa-c96b-4923-9829-41f1e63f3489}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7206b43f-1ef0-4c81-b116-110cd3f66145}" />
 	<object class="MixerBusFader" id="{c763f4d6-e12e-46bf-89c3-c763ebc010f1}" />
+	<object class="SpatialiserEffect" id="{7bb2ffdc-98d2-4b56-a163-01505627c262}" />
 	<object class="AutomationPoint" id="{2aae0f02-2b6d-4a54-81b3-82716d8fb332}">
 		<property name="position">
 			<value>0</value>
@@ -149,7 +155,7 @@
 	</object>
 	<object class="AutomationPoint" id="{3b0f9745-3d39-4ad0-913e-97d7dc69520a}">
 		<property name="position">
-			<value>0.10000000000000001</value>
+			<value>0.085000000000000006</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -158,22 +164,42 @@
 	<object class="MixerBusFader" id="{d84f7480-e609-403f-adfc-926edc552c69}" />
 	<object class="SFXReverbEffect" id="{2702a6a9-a599-4161-b3e4-1c134a71af90}">
 		<property name="decayTime">
-			<value>850</value>
+			<value>4100</value>
+		</property>
+		<property name="earlyDelay">
+			<value>0</value>
 		</property>
 		<property name="lateDelay">
-			<value>30</value>
+			<value>6.5</value>
+		</property>
+		<property name="HFReference">
+			<value>2600</value>
 		</property>
 		<property name="HFDecayRatio">
-			<value>59</value>
+			<value>54</value>
+		</property>
+		<property name="lowShelfFrequency">
+			<value>1000</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>-20</value>
 		</property>
 		<property name="highCut">
-			<value>5850</value>
+			<value>1750</value>
 		</property>
 		<property name="earlyLateMix">
-			<value>64</value>
+			<value>73</value>
 		</property>
 		<property name="wetLevel">
-			<value>-11.6999998</value>
+			<value>-8.5</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{c98e57fa-c96b-4923-9829-41f1e63f3489}">
+		<property name="pitch">
+			<value>0.889999986</value>
+		</property>
+		<property name="fftSize">
+			<value>680</value>
 		</property>
 	</object>
 </objects>

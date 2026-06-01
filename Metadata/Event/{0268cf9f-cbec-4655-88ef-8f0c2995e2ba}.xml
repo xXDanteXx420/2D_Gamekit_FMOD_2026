@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{0268cf9f-cbec-4655-88ef-8f0c2995e2ba}">
+		<property name="note">
+			<value>Ambiance Manager
+Labled Parameter Used for the Locations
+Magnet Regions used for snapping between the 2 Ambiances, loop regions placed over both to keep the ambiances looping
+
+Value 0 = Outside Ambiance
+Value 1 = Inside/Cave Ambiance
+
+Outside Ambiance Parameters:
+Cricket Intensity Parameter
+Value 0 = Cricket sounds
+Value 0.35 - 1 = Intense Cricket Sounds
+Bird Intensiry Parameter:
+Value 0 = Bird Sounds
+Value 0.5 - 1 = High pitched bird sounds ontop of the original
+Wind Parameter:
+Value 0 = only noise
+Value 0.05 = more wind
+Value 0.4 = alot of wind
+
+Inside/Cave Parameters:
+</value>
+		</property>
 		<property name="color">
 			<value>Purple</value>
 		</property>
@@ -31,7 +54,6 @@
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{3a8b10a8-a9dd-4058-8463-297f513f1ad7}</destination>
-			<destination>{03cc3d19-bbf7-4ba7-be06-591982dd686f}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{f0cf89d0-3fef-46a4-b7a2-2d03f1aa6b03}</destination>
@@ -76,17 +98,8 @@
 			<destination>{02d62142-11d6-4b2b-a434-6677153c35c3}</destination>
 		</relationship>
 	</object>
-	<object class="GroupTrack" id="{03cc3d19-bbf7-4ba7-be06-591982dd686f}">
-		<relationship name="modules">
-			<destination>{b931c110-6a7a-44ee-a6b6-628f5fde8efe}</destination>
-		</relationship>
-		<relationship name="mixerGroup">
-			<destination>{608bf419-ad17-4252-9a39-404187097bca}</destination>
-		</relationship>
-	</object>
 	<object class="Timeline" id="{f0cf89d0-3fef-46a4-b7a2-2d03f1aa6b03}">
 		<relationship name="modules">
-			<destination>{b931c110-6a7a-44ee-a6b6-628f5fde8efe}</destination>
 			<destination>{29c030c6-0b6f-4962-8824-fc754ee81576}</destination>
 			<destination>{d33b9850-b8e6-4700-9427-13ae971a6e7d}</destination>
 		</relationship>
@@ -129,6 +142,7 @@
 		<relationship name="parameters">
 			<destination>{0f0c507c-f319-4c90-a500-ccc1c962f9d1}</destination>
 			<destination>{42d1fc05-c5f2-4e16-8653-e0c245afe87d}</destination>
+			<destination>{56c79d9e-a5c9-4949-aa01-4c24c8c14299}</destination>
 		</relationship>
 		<relationship name="event">
 			<destination>{24ca7eb2-2d5b-40c7-9d4f-a12f63ae479a}</destination>
@@ -157,31 +171,6 @@
 		</relationship>
 		<relationship name="panner">
 			<destination>{460a547b-aca3-4886-a18c-bb94ad8fba73}</destination>
-		</relationship>
-		<relationship name="output">
-			<destination>{f1720aa8-d838-45b1-8a51-ccfaf313586d}</destination>
-		</relationship>
-	</object>
-	<object class="EventSound" id="{b931c110-6a7a-44ee-a6b6-628f5fde8efe}">
-		<property name="length">
-			<value>2</value>
-		</property>
-		<relationship name="parameters">
-			<destination>{f26d8ebf-de9c-4ae0-a70d-65956a41ee3f}</destination>
-		</relationship>
-		<relationship name="event">
-			<destination>{2c82c296-d84f-44b1-b9a1-3e56fe7351f2}</destination>
-		</relationship>
-	</object>
-	<object class="EventMixerGroup" id="{608bf419-ad17-4252-9a39-404187097bca}">
-		<property name="name">
-			<value>Wind</value>
-		</property>
-		<relationship name="effectChain">
-			<destination>{8e29e10b-4d32-47cd-8e20-efeb2679a2e7}</destination>
-		</relationship>
-		<relationship name="panner">
-			<destination>{f7f23b60-606a-4ac9-83a0-43e0a434ff7a}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{f1720aa8-d838-45b1-8a51-ccfaf313586d}</destination>
@@ -292,6 +281,11 @@
 			<destination>{f6a9b4b7-5a22-4bbc-8938-a11261dddede}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterProperty" id="{56c79d9e-a5c9-4949-aa01-4c24c8c14299}">
+		<relationship name="parameter">
+			<destination>{f6495ba6-ec8b-4fe6-81b4-6e8924eeb5d6}</destination>
+		</relationship>
+	</object>
 	<object class="ADSRModulator" id="{01155961-9f47-4612-b26e-a98c4230ee8e}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
@@ -312,17 +306,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{460a547b-aca3-4886-a18c-bb94ad8fba73}" />
-	<object class="ParameterProperty" id="{f26d8ebf-de9c-4ae0-a70d-65956a41ee3f}">
-		<relationship name="parameter">
-			<destination>{8c35a1cd-97b3-42f6-9931-5582aad8859e}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusEffectChain" id="{8e29e10b-4d32-47cd-8e20-efeb2679a2e7}">
-		<relationship name="effects">
-			<destination>{4d76a23b-f941-4413-9458-c21090d1e88c}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusPanner" id="{f7f23b60-606a-4ac9-83a0-43e0a434ff7a}" />
 	<object class="ParameterCondition" id="{fcb8644e-aa57-47b3-b12a-62a7f00c6749}">
 		<property name="minimum">
 			<value>1</value>
@@ -347,5 +330,4 @@
 	</object>
 	<object class="MixerBusFader" id="{d9811a20-b8e1-434f-8c84-0729d972c019}" />
 	<object class="MixerBusFader" id="{bd73a755-8df5-4436-9a30-c5f4032a9515}" />
-	<object class="MixerBusFader" id="{4d76a23b-f941-4413-9458-c21090d1e88c}" />
 </objects>

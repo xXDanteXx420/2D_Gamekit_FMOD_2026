@@ -9,7 +9,7 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 			<value>Red Light 2</value>
 		</property>
 		<property name="name">
-			<value>Bite_Attack</value>
+			<value>enemy_attack_bite</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -165,7 +165,6 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 		<relationship name="effects">
 			<destination>{13b53fd3-2601-44eb-83b8-671b38698507}</destination>
 			<destination>{2fae4227-d94f-4041-bce4-310bf9de264f}</destination>
-			<destination>{07ae8ebf-1167-437d-a4ec-694d69712d61}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{70ac27f1-23f7-4963-addd-40118bd734d7}" />
@@ -188,25 +187,12 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 	<object class="MixerBusEffectChain" id="{10f7c935-ebde-41a5-95a1-9062f7213858}">
 		<relationship name="effects">
 			<destination>{549ef788-ea2c-4331-a216-d002f170a18c}</destination>
+			<destination>{0a0c06f4-df10-4de6-8f03-9ea4c3eb2c3f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8b95c205-94fb-437b-bd66-ca0c568b5d4c}" />
 	<object class="MixerBusFader" id="{13b53fd3-2601-44eb-83b8-671b38698507}" />
 	<object class="SpatialiserEffect" id="{2fae4227-d94f-4041-bce4-310bf9de264f}" />
-	<object class="PitchShifterEffect" id="{07ae8ebf-1167-437d-a4ec-694d69712d61}">
-		<property name="pitch">
-			<value>0.659999967</value>
-		</property>
-		<property name="fftSize">
-			<value>2580</value>
-		</property>
-		<property name="overlap">
-			<value>1</value>
-		</property>
-		<property name="maxChannels">
-			<value>0.600000024</value>
-		</property>
-	</object>
 	<object class="AutomationPoint" id="{0a514dac-e5d1-415f-abc8-a21dadd0d0fb}">
 		<property name="position">
 			<value>0.80000000000000027</value>
@@ -229,11 +215,25 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 	<object class="MixerBusFader" id="{e234de8d-9125-4909-8b27-8cd01cbaa6a2}" />
 	<object class="SFXReverbEffect" id="{c866c318-0247-4941-9ba7-d15d4e7f5820}">
 		<property name="decayTime">
-			<value>1100</value>
+			<value>2400</value>
 		</property>
 		<property name="wetLevel">
 			<value>-15</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{549ef788-ea2c-4331-a216-d002f170a18c}" />
+	<object class="PitchShifterEffect" id="{0a0c06f4-df10-4de6-8f03-9ea4c3eb2c3f}">
+		<property name="pitch">
+			<value>0.659999967</value>
+		</property>
+		<property name="fftSize">
+			<value>2580</value>
+		</property>
+		<property name="overlap">
+			<value>1</value>
+		</property>
+		<property name="maxChannels">
+			<value>0.600000024</value>
+		</property>
+	</object>
 </objects>

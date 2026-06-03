@@ -3,7 +3,7 @@
 	<object class="Event" id="{d422c18b-831d-42e0-b819-cc04439433e1}">
 		<property name="note">
 			<value>Chomper Attack sound
-Sound is delayed due to the audio starting with the animation, agressive chew sound combined with a teeth shut sound </value>
+Sound is delayed due to the audio starting with the animation, agressive chew sound combined with a teeth shut sound, sound edited in reaper, added pitch shift and reverb in FMOD</value>
 		</property>
 		<property name="color">
 			<value>Red Light 2</value>
@@ -61,7 +61,7 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 			<destination>{debadeb8-1cbf-4b02-a30b-4a6725bfb86e}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{ec97b7ce-740a-4f5b-bd65-6ef843bc0557}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{1afb7780-df4e-4fe6-9740-ecca4888662e}" />
@@ -110,7 +110,7 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 			<value>0.60000000000000009</value>
 		</property>
 		<property name="length">
-			<value>0.53244897959183668</value>
+			<value>0.53244897959183646</value>
 		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{6908803c-ce1b-4c13-8419-d246f80fa579}</destination>
@@ -140,13 +140,16 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 		<property name="length">
 			<value>0.64000000000000001</value>
 		</property>
+		<relationship name="fadeInCurve">
+			<destination>{598ce126-353a-46ee-8d95-dce7fac8ba6f}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{a2c391bb-7857-4c37-8a89-a74597444753}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{f9363e22-91a0-49f5-9109-c1411cea346b}">
 		<property name="volume">
-			<value>-4</value>
+			<value>-2.5</value>
 		</property>
 		<property name="name">
 			<value>Chomper Attack</value>
@@ -184,6 +187,14 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b93d5b73-b360-46e3-b1b2-bf52172167dc}" />
+	<object class="FadeCurve" id="{598ce126-353a-46ee-8d95-dce7fac8ba6f}">
+		<relationship name="startPoint">
+			<destination>{7947e5d5-7c4a-475f-b7b7-1a1a7082d293}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{a5a247cd-5919-49d6-8faf-e670d62610f9}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{10f7c935-ebde-41a5-95a1-9062f7213858}">
 		<relationship name="effects">
 			<destination>{549ef788-ea2c-4331-a216-d002f170a18c}</destination>
@@ -215,10 +226,29 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 	<object class="MixerBusFader" id="{e234de8d-9125-4909-8b27-8cd01cbaa6a2}" />
 	<object class="SFXReverbEffect" id="{c866c318-0247-4941-9ba7-d15d4e7f5820}">
 		<property name="decayTime">
-			<value>2400</value>
+			<value>3400</value>
 		</property>
 		<property name="wetLevel">
 			<value>-15</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{7947e5d5-7c4a-475f-b7b7-1a1a7082d293}">
+		<property name="position">
+			<value>0.20000000000000001</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.2547189</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{a5a247cd-5919-49d6-8faf-e670d62610f9}">
+		<property name="position">
+			<value>0.23999999999999999</value>
+		</property>
+		<property name="value">
+			<value>1</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{549ef788-ea2c-4331-a216-d002f170a18c}" />

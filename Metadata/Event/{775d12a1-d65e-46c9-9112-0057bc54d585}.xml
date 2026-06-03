@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{775d12a1-d65e-46c9-9112-0057bc54d585}">
+		<property name="note">
+			<value>crystal like sound made mostly in reaper, added reverb in FMOD</value>
+		</property>
 		<property name="color">
 			<value>Magenta Light 1</value>
 		</property>

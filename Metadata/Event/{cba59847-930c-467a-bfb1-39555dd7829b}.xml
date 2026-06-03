@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{cba59847-930c-467a-bfb1-39555dd7829b}">
+		<property name="note">
+			<value>Attack sound for spitter, edited in reaper added pitch shift, eq and reverb in FMOD</value>
+		</property>
 		<property name="color">
 			<value>Red Light 2</value>
 		</property>
@@ -56,17 +59,24 @@
 			<destination>{7ddf2b5f-618f-4a77-a386-085fc0329d87}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{ec97b7ce-740a-4f5b-bd65-6ef843bc0557}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{cd6f7add-85f3-4cc0-80c5-86c897df1690}" />
 	<object class="MarkerTrack" id="{7f34442d-a832-4fc1-b5c5-73bb47d50295}" />
 	<object class="GroupTrack" id="{e869273e-4cb0-4e1b-b3dc-e1b4a32ad65f}">
+		<relationship name="modules">
+			<destination>{2495ad55-52c4-4a25-bec0-e77301594bcc}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{e0066cd7-f920-4c6a-8667-6f4fb131c55c}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{e51831b6-9ea9-487f-8c23-1a3a2b6036b4}" />
+	<object class="Timeline" id="{e51831b6-9ea9-487f-8c23-1a3a2b6036b4}">
+		<relationship name="modules">
+			<destination>{2495ad55-52c4-4a25-bec0-e77301594bcc}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{2770e6ec-9591-4696-bc5e-1c1b9503f104}">
 		<relationship name="effectChain">
 			<destination>{54cbdc7f-724b-439b-8c06-89e0a05dcaf9}</destination>
@@ -84,9 +94,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7ddf2b5f-618f-4a77-a386-085fc0329d87}" />
+	<object class="SingleSound" id="{2495ad55-52c4-4a25-bec0-e77301594bcc}">
+		<property name="length">
+			<value>0.29999999999999982</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{0063f5cc-454f-4935-a2c6-6468c4b4d1fe}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{e0066cd7-f920-4c6a-8667-6f4fb131c55c}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Main</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{0af0ca6e-fddd-4459-ab83-ece26a8b8796}</destination>
@@ -109,10 +130,37 @@
 	<object class="MixerBusEffectChain" id="{0af0ca6e-fddd-4459-ab83-ece26a8b8796}">
 		<relationship name="effects">
 			<destination>{64d84793-e7d9-48b2-9a03-b5396d1163dd}</destination>
+			<destination>{9660d8c2-35aa-489e-a4cc-329b566275d0}</destination>
+			<destination>{a876af4a-8467-4970-a7ad-bf0e786872b3}</destination>
+			<destination>{3977a945-512c-47db-9f3c-e26fe0b53705}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{eb716cbb-c311-4d22-941d-8e24bab5694c}" />
 	<object class="MixerBusFader" id="{3b112bda-d94a-48fd-832e-70ce5f62d6da}" />
 	<object class="SpatialiserEffect" id="{4d93b3cf-aea7-4dbd-ab59-3fc96a59c6de}" />
 	<object class="MixerBusFader" id="{64d84793-e7d9-48b2-9a03-b5396d1163dd}" />
+	<object class="PitchShifterEffect" id="{9660d8c2-35aa-489e-a4cc-329b566275d0}">
+		<property name="pitch">
+			<value>0.799999952</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{a876af4a-8467-4970-a7ad-bf0e786872b3}">
+		<property name="decayTime">
+			<value>1000</value>
+		</property>
+		<property name="earlyDelay">
+			<value>0</value>
+		</property>
+		<property name="wetLevel">
+			<value>-4.5</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{3977a945-512c-47db-9f3c-e26fe0b53705}">
+		<property name="frequencyA">
+			<value>11362.2461</value>
+		</property>
+		<property name="qualityA">
+			<value>3.70000005</value>
+		</property>
+	</object>
 </objects>

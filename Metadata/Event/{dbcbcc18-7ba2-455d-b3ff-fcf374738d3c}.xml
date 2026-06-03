@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{dbcbcc18-7ba2-455d-b3ff-fcf374738d3c}">
+		<property name="note">
+			<value>Player Attack Melee
+
+Similar to the ranged attack this sound also uses a slinky sound, however this is the "ending" of the slinky that sounds different, used reverb to drag out the laser a little bit</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -56,7 +61,7 @@
 			<destination>{28467bc0-994e-47b9-a3aa-c5c08ecbea35}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{8e04c712-bed2-4081-8178-56ee3c0080df}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{618997a2-5493-461b-b072-d134484203af}" />
@@ -101,7 +106,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{d8118bcb-6d66-49ea-965a-dafbc2ce3671}">
 		<property name="volume">
-			<value>1</value>
+			<value>7.5</value>
 		</property>
 		<property name="name">
 			<value>Melee</value>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{1f0d1f0f-2718-4dcc-b610-425d39bcf771}">
+		<property name="note">
+			<value>Player Attack Ranged
+
+multi instrument with 3 different laser sounds, made with a slinky, that plays every time the player uses the ranged weapon, 33% chance for each sound to play </value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{f57dd792-5894-4c8d-afc7-24ea595965b5}">
+		<property name="note">
+			<value>Edited sound of the original laser the player ranged weapon has, added reverb, eq and pitch shift to make it sound different and cooler</value>
+		</property>
 		<property name="color">
 			<value>Cyan</value>
 		</property>
@@ -56,7 +59,7 @@
 			<destination>{d7af9441-6d6c-4728-9af5-1d1ab679b442}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{74e88d25-471d-44f3-b127-6ffb9a8c09ac}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{27567a21-636b-4332-93a5-e699e289c4d8}" />
@@ -101,7 +104,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{1bdd1d1d-be0c-413c-8f22-f388b9dd8bdf}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Main</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{e5f2e540-45cd-497c-ae17-cd132399597c}</destination>
@@ -153,15 +156,15 @@
 			<value>59</value>
 		</property>
 		<property name="wetLevel">
-			<value>-11.3000002</value>
+			<value>-16</value>
 		</property>
 	</object>
 	<object class="MultibandEqEffect" id="{299ac288-6295-4f60-8dc7-8bfd12a12e0f}">
 		<property name="frequencyA">
-			<value>3073.21704</value>
+			<value>4107.41016</value>
 		</property>
 		<property name="qualityA">
-			<value>4.17241383</value>
+			<value>1.06368971</value>
 		</property>
 	</object>
 	<object class="PitchShifterEffect" id="{1fadd1df-024d-4f71-8285-a5ae80efcac0}">

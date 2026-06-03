@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{a2b943c1-68e6-4a0d-88cb-37d0468776f2}">
+		<property name="note">
+			<value>Ellen Jumping Sound
+
+Cloth sound combined with a metal like sound, and a voice that sounds energetic to get the feeling of a jump</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>
@@ -179,9 +184,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b1cdb7fe-175d-4cec-8442-036942431713}">
-		<property name="volume">
-			<value>-2.5</value>
-		</property>
 		<property name="name">
 			<value>jump_VA</value>
 		</property>

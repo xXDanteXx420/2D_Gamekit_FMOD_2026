@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{8028a24c-bd88-4147-8dd0-be4b9983c86f}">
+		<property name="note">
+			<value>Ellen Hurt sound
+
+A semi-moan that plays when ellen takes damage</value>
+		</property>
 		<property name="color">
 			<value>Red</value>
 		</property>

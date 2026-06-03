@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{d47f990d-4679-444b-bba0-484d19f5738a}">
+		<property name="note">
+			<value>SteamStage
+Value 1 = Steamstage 1, steam oneshot sounds that indicates that the stage is activated
+Value 2 = SteamStage 2, more intense steaming in a oneshot sound that indicates that stage 2 is active</value>
+		</property>
 		<property name="color">
 			<value>Cyan</value>
 		</property>
@@ -34,6 +39,9 @@
 		<relationship name="timeline">
 			<destination>{0e1693d7-8097-43aa-a77e-b3013d5d3bb6}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{0e05388b-d6f1-476f-98b7-7a87be4e8c0c}</destination>
+		</relationship>
 		<relationship name="banks">
 			<destination>{0e41109f-2d01-4da2-8a51-0de32d7fc467}</destination>
 		</relationship>
@@ -56,17 +64,34 @@
 			<destination>{17219646-3adb-4b50-b3d1-0af0b62756b8}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{082a6843-89d6-403f-9853-83e4040d1939}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{8bd8b3bf-88c9-425b-9fbf-297adb83198d}" />
 	<object class="MarkerTrack" id="{92e3766a-7f21-43e2-91a1-392a5c9a6950}" />
 	<object class="GroupTrack" id="{3f4d8abc-7a24-481f-af9c-ccd28c3369c7}">
+		<relationship name="modules">
+			<destination>{82ce232c-4f5b-4ec3-ac50-19c6fe3d29da}</destination>
+			<destination>{7419db2c-60b4-4a08-a257-0fbdad38dfa8}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a31df40c-d5c7-4c45-8b32-1cfbbad54fcf}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{0e1693d7-8097-43aa-a77e-b3013d5d3bb6}" />
+	<object class="Timeline" id="{0e1693d7-8097-43aa-a77e-b3013d5d3bb6}">
+		<property name="isProxyEnabled">
+			<value>false</value>
+		</property>
+	</object>
+	<object class="ParameterProxy" id="{0e05388b-d6f1-476f-98b7-7a87be4e8c0c}">
+		<relationship name="modules">
+			<destination>{82ce232c-4f5b-4ec3-ac50-19c6fe3d29da}</destination>
+			<destination>{7419db2c-60b4-4a08-a257-0fbdad38dfa8}</destination>
+		</relationship>
+		<relationship name="preset">
+			<destination>{b6760f83-e934-4477-a613-26fc06be9d71}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{5768d0f3-21c2-40b3-aafc-75e0ca859fc8}">
 		<relationship name="effectChain">
 			<destination>{20199ca6-f161-4594-9e7e-a2416c53530d}</destination>
@@ -84,9 +109,25 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{17219646-3adb-4b50-b3d1-0af0b62756b8}" />
+	<object class="SingleSound" id="{82ce232c-4f5b-4ec3-ac50-19c6fe3d29da}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6daf6450-9f25-467a-b10e-7ea81c10faae}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{7419db2c-60b4-4a08-a257-0fbdad38dfa8}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{3a352958-d354-4211-85d7-61d4fb1a4c10}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{a31df40c-d5c7-4c45-8b32-1cfbbad54fcf}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>SteamStages</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{39a76870-fe1c-4571-9388-57dd39981a2d}</destination>

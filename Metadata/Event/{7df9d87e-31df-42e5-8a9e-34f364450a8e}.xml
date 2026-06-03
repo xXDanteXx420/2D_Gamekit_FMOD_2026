@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{7df9d87e-31df-42e5-8a9e-34f364450a8e}">
+		<property name="note">
+			<value>Metal impact sound triggers when gunner is attacked, used a multi instrument for some variety in the impacts</value>
+		</property>
 		<property name="color">
 			<value>Cyan</value>
 		</property>
@@ -56,17 +59,24 @@
 			<destination>{08afa03a-b86c-4783-aced-0134a33e61f6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{0d701ae7-c4e0-424c-aa96-fccddccd5f44}</destination>
+			<destination>{74e88d25-471d-44f3-b127-6ffb9a8c09ac}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{66e1abcd-98f5-434d-9d28-58b273552d68}" />
 	<object class="MarkerTrack" id="{afb5338c-1b6f-418d-9bd3-50b04570260c}" />
 	<object class="GroupTrack" id="{28e7dcae-cf95-4e0a-869a-0384e2f681b3}">
+		<relationship name="modules">
+			<destination>{b2ff7288-3021-4fef-b70d-22e31adeaef2}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{83e3db93-6203-4e44-9e30-005fb08004b5}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{01a12f67-457b-4a6c-bdbe-0a9681e40f2e}" />
+	<object class="Timeline" id="{01a12f67-457b-4a6c-bdbe-0a9681e40f2e}">
+		<relationship name="modules">
+			<destination>{b2ff7288-3021-4fef-b70d-22e31adeaef2}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{5f3eeaa4-aa0d-4fcd-bd0f-0a1c7120411b}">
 		<relationship name="effectChain">
 			<destination>{0d01021c-865d-4651-9145-d315e478b691}</destination>
@@ -84,9 +94,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{08afa03a-b86c-4783-aced-0134a33e61f6}" />
+	<object class="MultiSound" id="{b2ff7288-3021-4fef-b70d-22e31adeaef2}">
+		<property name="length">
+			<value>0.10000000000000001</value>
+		</property>
+		<relationship name="sounds">
+			<destination>{19f0e528-a875-422c-b6b3-6eb148860d83}</destination>
+			<destination>{5a191dba-a270-4390-bf6e-3fb254f52800}</destination>
+			<destination>{f0bcc4e8-0dfa-442c-bf42-d0d89ff7f5b1}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{83e3db93-6203-4e44-9e30-005fb08004b5}">
+		<property name="volume">
+			<value>-8.5</value>
+		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Impact</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{c6b1951b-0a3f-4727-b63e-ce110f7c9d6a}</destination>
@@ -106,13 +129,36 @@
 	</object>
 	<object class="MixerBusPanner" id="{c87d97a3-eea1-4673-a3d4-8eadd8dff17e}" />
 	<object class="MixerBusFader" id="{f6e246d8-9769-4bc1-bfc5-656b3a8f38a4}" />
+	<object class="SingleSound" id="{19f0e528-a875-422c-b6b3-6eb148860d83}">
+		<relationship name="audioFile">
+			<destination>{990c07b5-7c08-485c-8743-da62dae03768}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{5a191dba-a270-4390-bf6e-3fb254f52800}">
+		<relationship name="audioFile">
+			<destination>{886cfc30-10d5-4623-98bc-3c2d6e2ee6e1}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{f0bcc4e8-0dfa-442c-bf42-d0d89ff7f5b1}">
+		<relationship name="audioFile">
+			<destination>{e8b81572-9cdf-46df-8def-4a03b18a948d}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{c6b1951b-0a3f-4727-b63e-ce110f7c9d6a}">
 		<relationship name="effects">
 			<destination>{4e096b6c-0e4f-4438-b4b9-01f10b8b6421}</destination>
+			<destination>{cdb9bd2e-7929-436d-b060-94772e0f16cf}</destination>
+			<destination>{7e947315-6644-401f-b60c-839fd2bf6087}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c03d9910-e1c2-496e-b474-aad37a48b32d}" />
 	<object class="MixerBusFader" id="{87a089c7-ab97-4df5-b2ae-8dfede7ed6c8}" />
 	<object class="SpatialiserEffect" id="{bf6e3945-5bd0-4c56-a039-1a613c87af4b}" />
 	<object class="MixerBusFader" id="{4e096b6c-0e4f-4438-b4b9-01f10b8b6421}" />
+	<object class="SFXReverbEffect" id="{cdb9bd2e-7929-436d-b060-94772e0f16cf}" />
+	<object class="PitchShifterEffect" id="{7e947315-6644-401f-b60c-839fd2bf6087}">
+		<property name="pitch">
+			<value>0.629999995</value>
+		</property>
+	</object>
 </objects>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{74e88d25-471d-44f3-b127-6ffb9a8c09ac}">
+		<property name="name">
+			<value>Boss_Gunner</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{769e660c-b565-4563-a30d-776254092c6f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{42e3a7c1-3d4a-4013-84fb-8befc4446d22}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{da98d73d-c290-45d6-a67b-2ebdc5eb3543}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{769e660c-b565-4563-a30d-776254092c6f}">
+		<relationship name="effects">
+			<destination>{088daecd-d8d3-4fa9-a922-a5ab6c62589d}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{42e3a7c1-3d4a-4013-84fb-8befc4446d22}" />
+	<object class="MixerBusFader" id="{088daecd-d8d3-4fa9-a922-a5ab6c62589d}" />
+</objects>

@@ -191,12 +191,12 @@
 			<value>73</value>
 		</property>
 		<property name="wetLevel">
-			<value>-8.5</value>
+			<value>-5</value>
 		</property>
 	</object>
 	<object class="PitchShifterEffect" id="{c98e57fa-c96b-4923-9829-41f1e63f3489}">
 		<property name="pitch">
-			<value>0.889999986</value>
+			<value>0.819999993</value>
 		</property>
 		<property name="fftSize">
 			<value>680</value>

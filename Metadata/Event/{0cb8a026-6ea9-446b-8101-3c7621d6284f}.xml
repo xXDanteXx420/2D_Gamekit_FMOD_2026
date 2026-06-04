@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{0cb8a026-6ea9-446b-8101-3c7621d6284f}">
+		<property name="note">
+			<value>Rumbling sound for the door opening, used EQ for the low frequencies</value>
+		</property>
 		<property name="color">
 			<value>Magenta Light 1</value>
 		</property>

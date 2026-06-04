@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{01063b54-51a8-4ce9-b603-cdb6e36ea476}">
+		<property name="note">
+			<value>Low and high frequesnt sounds combined to get the feeling of stones palling down, but also including rumbling to make it more realistic</value>
+		</property>
 		<property name="color">
 			<value>Magenta Light 1</value>
 		</property>

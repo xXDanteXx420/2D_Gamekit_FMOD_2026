@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{03cc7be2-fa2b-4ade-aa07-53b8e036770c}">
+		<property name="note">
+			<value>Combined laser sound, with an impact layered 2 times for a more meaty sound, debris after to make the explosion more realistic</value>
+		</property>
 		<property name="color">
 			<value>Cyan</value>
 		</property>
@@ -177,7 +180,7 @@
 			<value>10</value>
 		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Laser</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{88b818d8-1271-44b2-8265-c84fb54c9717}</destination>

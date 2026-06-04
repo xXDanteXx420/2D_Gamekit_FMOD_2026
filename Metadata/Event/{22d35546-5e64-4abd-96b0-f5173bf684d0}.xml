@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{22d35546-5e64-4abd-96b0-f5173bf684d0}">
 		<property name="note">
-			<value>Loop Region Placed over a acid like sound, used for the acidpools in the different zones</value>
+			<value>Loop Region Placed over 2 layered acid like sounds, used for the acidpools in the different zones</value>
 		</property>
 		<property name="color">
 			<value>Purple</value>

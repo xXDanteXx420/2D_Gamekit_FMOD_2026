@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{fc47cafc-02bd-4214-ac67-698d08e9d7b4}">
+		<property name="note">
+			<value>used a discrete parameter 
+value 0 = loop will continue playing
+value 1 = loop stops
+
+used a transition region and a destination maker for the parameter to take effect when used. 
+
+wood against wood to get the "push" sound</value>
+		</property>
 		<property name="color">
 			<value>Magenta Light 1</value>
 		</property>

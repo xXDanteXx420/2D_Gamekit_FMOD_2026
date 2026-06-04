@@ -8,7 +8,7 @@
 			<value>pickup_health</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ed0926ed-0e2e-4cf6-8332-8181a839d003}</destination>
@@ -65,11 +65,18 @@
 	<object class="EventAutomatableProperties" id="{ec7f1408-5503-40f2-87ea-b3d7bbb2a336}" />
 	<object class="MarkerTrack" id="{9a288165-c288-4f3a-8270-737062591d20}" />
 	<object class="GroupTrack" id="{2e395066-1c3b-4d4d-b24a-d1f420b12ee6}">
+		<relationship name="modules">
+			<destination>{1e22298f-e9e9-49ad-bbea-72f10d35800d}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{8f430b20-e983-4c66-9be3-0676c36b6c6c}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{638cd9e9-4293-43f0-82d2-f0c70cba2a38}" />
+	<object class="Timeline" id="{638cd9e9-4293-43f0-82d2-f0c70cba2a38}">
+		<relationship name="modules">
+			<destination>{1e22298f-e9e9-49ad-bbea-72f10d35800d}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{9e1d91a2-1da7-441b-ba8c-b45c383c56d3}">
 		<relationship name="effectChain">
 			<destination>{c9d92d92-0bab-4ae5-b7fa-7454120e7b09}</destination>
@@ -87,9 +94,26 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2f43234b-b1c6-43a9-a92f-0398b2933c44}" />
+	<object class="SingleSound" id="{1e22298f-e9e9-49ad-bbea-72f10d35800d}">
+		<property name="length">
+			<value>0.67000000000000004</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.13</value>
+		</property>
+		<relationship name="fadeInCurve">
+			<destination>{8668c774-f87e-45b6-9ea7-61a02574dcb4}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{b8da4867-6377-4f52-bc2b-420eee478cec}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{8f430b20-e983-4c66-9be3-0676c36b6c6c}">
+		<property name="volume">
+			<value>3</value>
+		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Health</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{38771e6c-99d8-4f8b-8e05-94e1a290ffce}</destination>
@@ -108,12 +132,87 @@
 	</object>
 	<object class="MixerBusPanner" id="{180bd280-d38c-43a2-b246-238e21fda165}" />
 	<object class="MixerBusFader" id="{0e324d65-e17c-4fcf-8ede-b54daba1b79d}" />
+	<object class="FadeCurve" id="{8668c774-f87e-45b6-9ea7-61a02574dcb4}">
+		<relationship name="startPoint">
+			<destination>{ad831094-dfd8-4e00-8938-9184ec47b451}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{7bb95a9a-e3b4-406b-abd6-c1b7a6995f34}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{38771e6c-99d8-4f8b-8e05-94e1a290ffce}">
 		<relationship name="effects">
 			<destination>{99714a8a-cca9-427e-80e6-49be597e8417}</destination>
+			<destination>{4914dc50-c135-4103-ae6c-4f8601a6ab7a}</destination>
+			<destination>{ff161ce9-17f0-4636-b586-6b86be68a619}</destination>
+			<destination>{87e1c288-4c80-4f52-a1e5-d70564e94f5b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{be9baef5-dfd0-4609-b7e6-c1ec55984833}" />
 	<object class="MixerBusFader" id="{7a0b65cc-ab49-4d8c-b1a5-4075172acefb}" />
+	<object class="AutomationPoint" id="{ad831094-dfd8-4e00-8938-9184ec47b451}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>0.2194812</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{7bb95a9a-e3b4-406b-abd6-c1b7a6995f34}">
+		<property name="position">
+			<value>0.19</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{99714a8a-cca9-427e-80e6-49be597e8417}" />
+	<object class="SFXReverbEffect" id="{4914dc50-c135-4103-ae6c-4f8601a6ab7a}">
+		<property name="decayTime">
+			<value>7200</value>
+		</property>
+		<property name="lateDelay">
+			<value>30</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>33</value>
+		</property>
+		<property name="highCut">
+			<value>4500</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>80</value>
+		</property>
+		<property name="wetLevel">
+			<value>-9.60000038</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{ff161ce9-17f0-4636-b586-6b86be68a619}">
+		<property name="pitch">
+			<value>1.14999998</value>
+		</property>
+	</object>
+	<object class="ThreeEQEffect" id="{87e1c288-4c80-4f52-a1e5-d70564e94f5b}">
+		<property name="lowGain">
+			<value>-78</value>
+		</property>
+		<property name="midGain">
+			<value>-0.5</value>
+		</property>
+		<property name="highGain">
+			<value>-2</value>
+		</property>
+		<property name="lowCrossover">
+			<value>10</value>
+		</property>
+		<property name="highCrossover">
+			<value>8500</value>
+		</property>
+		<property name="crossoverSlope">
+			<value>2</value>
+		</property>
+	</object>
 </objects>

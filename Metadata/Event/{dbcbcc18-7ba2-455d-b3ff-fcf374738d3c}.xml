@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{dbcbcc18-7ba2-455d-b3ff-fcf374738d3c}">
 		<property name="note">
-			<value>Player Attack Melee
+			<value>Player_attack_melee
 
 Similar to the ranged attack this sound also uses a slinky sound, however this is the "ending" of the slinky that sounds different, used reverb to drag out the laser a little bit</value>
 		</property>

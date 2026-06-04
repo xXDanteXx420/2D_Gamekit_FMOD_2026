@@ -3,8 +3,7 @@
 	<object class="Event" id="{9778ddd2-97b8-4905-bea5-1ce983340ea4}">
 		<property name="note">
 			<value>Multi instrument with 3 different dripping sounds, and a rumbling noise to match the feeling of a cave, loop region placed over both in order to keep the ambiance going.
-Probability set to 30% on the dripping sounds, in order to not make it to repetetive 
-HI</value>
+Probability set to 30% on the dripping sounds, in order to not make it to repetetive </value>
 		</property>
 		<property name="color">
 			<value>Purple</value>

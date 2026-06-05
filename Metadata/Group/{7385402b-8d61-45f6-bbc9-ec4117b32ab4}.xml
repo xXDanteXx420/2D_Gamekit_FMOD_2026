@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{7385402b-8d61-45f6-bbc9-ec4117b32ab4}">
+		<property name="color">
+			<value>Cyan</value>
+		</property>
+		<property name="volume">
+			<value>-6.5</value>
+		</property>
+		<property name="name">
+			<value>laser_attack</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{29f6a33d-9363-4162-b04f-434ed87e8ebb}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{142477be-4396-4070-8d27-2a9c9faa12aa}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{74e88d25-471d-44f3-b127-6ffb9a8c09ac}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{29f6a33d-9363-4162-b04f-434ed87e8ebb}">
+		<relationship name="effects">
+			<destination>{49184a1c-75bf-4bee-a19a-4acb0ae04f21}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{142477be-4396-4070-8d27-2a9c9faa12aa}" />
+	<object class="MixerBusFader" id="{49184a1c-75bf-4bee-a19a-4acb0ae04f21}" />
+</objects>

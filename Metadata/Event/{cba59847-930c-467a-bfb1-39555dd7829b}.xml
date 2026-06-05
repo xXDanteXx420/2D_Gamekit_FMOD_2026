@@ -2,7 +2,8 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{cba59847-930c-467a-bfb1-39555dd7829b}">
 		<property name="note">
-			<value>Attack sound for spitter, edited in reaper added pitch shift, eq and reverb in FMOD</value>
+			<value>Attack sound for spitter, edited in reaper added pitch shift, eq and reverb in FMOD
+modulation on the pitch for more variety and less repetetiveness</value>
 		</property>
 		<property name="color">
 			<value>Red Light 2</value>
@@ -101,6 +102,9 @@
 		<property name="timelockedOffset">
 			<value>0.5</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{f72171be-42d6-4209-9ae7-ee8719222847}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{0063f5cc-454f-4935-a2c6-6468c4b4d1fe}</destination>
 		</relationship>
@@ -127,6 +131,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{8bfc6fdd-6a1b-4aff-b8de-d50258017086}" />
 	<object class="MixerBusFader" id="{f299c8ab-a442-4620-9c43-316d3d34062c}" />
+	<object class="RandomizerModulator" id="{f72171be-42d6-4209-9ae7-ee8719222847}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>15.5</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{0af0ca6e-fddd-4459-ab83-ece26a8b8796}">
 		<relationship name="effects">
 			<destination>{64d84793-e7d9-48b2-9a03-b5396d1163dd}</destination>

@@ -2,7 +2,8 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{01063b54-51a8-4ce9-b603-cdb6e36ea476}">
 		<property name="note">
-			<value>Low and high frequesnt sounds combined to get the feeling of stones palling down, but also including rumbling to make it more realistic</value>
+			<value>Low and high frequesnt sounds combined to get the feeling of stones palling down, but also including rumbling to make it more realistic
+heavy debris to make the impact feel powerful compared to the wall</value>
 		</property>
 		<property name="color">
 			<value>Magenta Light 1</value>
@@ -182,6 +183,9 @@
 		</property>
 		<property name="timelockedOffset">
 			<value>0.0099999999999999534</value>
+		</property>
+		<property name="pitch">
+			<value>-0.5</value>
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{d15ba56d-5cd9-4cbe-bc91-938b735528df}</destination>
@@ -372,7 +376,7 @@
 			<value>0</value>
 		</property>
 		<property name="curveShape">
-			<value>-0.2547189</value>
+			<value>-1.00000048</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b9fd538d-9e66-4162-94d3-a9da6e7d08c1}">

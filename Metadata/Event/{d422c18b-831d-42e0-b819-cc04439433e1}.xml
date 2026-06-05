@@ -3,7 +3,8 @@
 	<object class="Event" id="{d422c18b-831d-42e0-b819-cc04439433e1}">
 		<property name="note">
 			<value>Chomper Attack sound
-Sound is delayed due to the audio starting with the animation, agressive chew sound combined with a teeth shut sound, sound edited in reaper, added pitch shift and reverb in FMOD</value>
+Sound is delayed due to the audio starting with the animation, agressive chew sound combined with a teeth shut sound, sound edited in reaper, added pitch shift and reverb in FMOD
+random modulation on the pitch for decreased repeteiveness</value>
 		</property>
 		<property name="color">
 			<value>Red Light 2</value>
@@ -140,6 +141,9 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 		<property name="length">
 			<value>0.64000000000000001</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{42f024ab-72ac-4d03-96c7-263323f4b940}</destination>
+		</relationship>
 		<relationship name="fadeInCurve">
 			<destination>{598ce126-353a-46ee-8d95-dce7fac8ba6f}</destination>
 		</relationship>
@@ -187,6 +191,14 @@ Sound is delayed due to the audio starting with the animation, agressive chew so
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b93d5b73-b360-46e3-b1b2-bf52172167dc}" />
+	<object class="RandomizerModulator" id="{42f024ab-72ac-4d03-96c7-263323f4b940}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>14.5</value>
+		</property>
+	</object>
 	<object class="FadeCurve" id="{598ce126-353a-46ee-8d95-dce7fac8ba6f}">
 		<relationship name="startPoint">
 			<destination>{7947e5d5-7c4a-475f-b7b7-1a1a7082d293}</destination>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{91e20298-7809-4703-a882-a58bf98b3a12}">
 		<property name="note">
-			<value>used reverb and pitch shift on a water splashing sound</value>
+			<value>added delay and distortion to make a more realistic splash</value>
 		</property>
 		<property name="color">
 			<value>Magenta Light 1</value>

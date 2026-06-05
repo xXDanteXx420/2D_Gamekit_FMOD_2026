@@ -304,7 +304,7 @@ Value 0.4 = alot of wind</value>
 			<value>0.59999999999999998</value>
 		</property>
 		<property name="volume">
-			<value>4</value>
+			<value>10</value>
 		</property>
 		<property name="looping">
 			<value>true</value>

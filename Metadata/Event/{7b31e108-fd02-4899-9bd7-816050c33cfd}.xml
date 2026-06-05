@@ -186,7 +186,7 @@ Cloth sound combined with a metal like sound, and a voice that indicates that th
 			<value>0.37648526077097505</value>
 		</property>
 		<property name="volume">
-			<value>-11.5</value>
+			<value>-15</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{19fdf055-5cba-4960-8531-7ad0b0b09319}</destination>

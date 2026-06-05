@@ -158,6 +158,9 @@
 		<property name="length">
 			<value>0.98643990929705216</value>
 		</property>
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<relationship name="event">
 			<destination>{03cc7be2-fa2b-4ade-aa07-53b8e036770c}</destination>
 		</relationship>
@@ -322,7 +325,7 @@
 	</object>
 	<object class="DistortionEffect" id="{840a102f-7b9e-4d55-98e1-cd0cd53a985c}">
 		<property name="level">
-			<value>0.334999979</value>
+			<value>0.550000012</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{628efb9c-cfb5-4d90-bc80-1a16192aa07d}" />

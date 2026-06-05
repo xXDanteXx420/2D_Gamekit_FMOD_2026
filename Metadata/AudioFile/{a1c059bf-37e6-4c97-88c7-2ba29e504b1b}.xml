@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{a1c059bf-37e6-4c97-88c7-2ba29e504b1b}">
 		<property name="assetPath">
-			<value>Laser/BOSSLASER.wav</value>
+			<value>LaserAttacks/gunner_laser_ranged.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>192</value>

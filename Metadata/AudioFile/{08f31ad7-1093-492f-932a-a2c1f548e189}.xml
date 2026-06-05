@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{08f31ad7-1093-492f-932a-a2c1f548e189}">
 		<property name="assetPath">
-			<value>lightning_attack.wav</value>
+			<value>foley/gunner/gunner_lightning_attack.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

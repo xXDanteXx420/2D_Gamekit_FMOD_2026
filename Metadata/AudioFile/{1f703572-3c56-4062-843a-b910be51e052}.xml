@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{1f703572-3c56-4062-843a-b910be51e052}">
 		<property name="assetPath">
-			<value>Laser/LaserTrimmed001.wav</value>
+			<value>LaserAttacks/ellen_laser_ranged_001.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>192</value>

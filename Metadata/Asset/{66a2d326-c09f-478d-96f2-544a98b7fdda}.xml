@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="EncodableAsset" id="{ae745858-e308-4c65-b18e-5cc4692df48a}">
-		<property name="color">
-			<value>Green Light 2</value>
-		</property>
+	<object class="EncodableAsset" id="{66a2d326-c09f-478d-96f2-544a98b7fdda}">
 		<property name="assetPath">
-			<value>LaserAttacks/</value>
+			<value>foley/metal/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{87141b2c-14ae-4bd0-b17b-6338c22d2609}</destination>

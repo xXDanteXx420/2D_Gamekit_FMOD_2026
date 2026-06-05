@@ -44,7 +44,6 @@ Value 0.4 = alot of wind</value>
 			<destination>{0cb3ad5d-128e-461a-8376-4aa0522c0ae8}</destination>
 			<destination>{0a9d8fdc-c51e-4f06-b13a-75370de0fb7d}</destination>
 			<destination>{a6b0ddde-0e37-4490-9b8f-f31ad429a8e8}</destination>
-			<destination>{3eb5571f-a9c1-45b9-9a5b-114442a01ae8}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{ca45f799-db53-4c79-8795-f903428f5c85}</destination>
@@ -108,14 +107,6 @@ Value 0.4 = alot of wind</value>
 			<destination>{281dad16-acde-439e-9f2f-abbca077c16e}</destination>
 		</relationship>
 	</object>
-	<object class="GroupTrack" id="{3eb5571f-a9c1-45b9-9a5b-114442a01ae8}">
-		<relationship name="modules">
-			<destination>{c4ec48df-0d39-41ce-9e39-3101c643fe34}</destination>
-		</relationship>
-		<relationship name="mixerGroup">
-			<destination>{b9955966-e7b0-4009-a5d0-9c85bf3f2ba2}</destination>
-		</relationship>
-	</object>
 	<object class="Timeline" id="{ca45f799-db53-4c79-8795-f903428f5c85}">
 		<property name="isProxyEnabled">
 			<value>false</value>
@@ -143,7 +134,6 @@ Value 0.4 = alot of wind</value>
 		<relationship name="modules">
 			<destination>{d66d638d-050a-4829-b263-b3ebde3a04cc}</destination>
 			<destination>{12b5b064-10bc-431c-a619-adea3783b2b5}</destination>
-			<destination>{c4ec48df-0d39-41ce-9e39-3101c643fe34}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{22d1a33d-c6c5-4e4d-8c5b-e5253167ab2d}</destination>
@@ -288,7 +278,7 @@ Value 0.4 = alot of wind</value>
 			<value>0.55000000000000004</value>
 		</property>
 		<property name="volume">
-			<value>3</value>
+			<value>5.5</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -338,34 +328,6 @@ Value 0.4 = alot of wind</value>
 		</relationship>
 		<relationship name="panner">
 			<destination>{d7e1f678-fa9d-4e4d-9fbe-35432f7ed764}</destination>
-		</relationship>
-		<relationship name="output">
-			<destination>{bf918411-f442-46d9-9ec5-30b6af64d516}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{c4ec48df-0d39-41ce-9e39-3101c643fe34}">
-		<property name="isCutoff">
-			<value>true</value>
-		</property>
-		<property name="looping">
-			<value>true</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{3f1e4673-10ef-4b60-990e-a3138feed032}</destination>
-		</relationship>
-	</object>
-	<object class="EventMixerGroup" id="{b9955966-e7b0-4009-a5d0-9c85bf3f2ba2}">
-		<property name="volume">
-			<value>-11</value>
-		</property>
-		<property name="name">
-			<value>Noise</value>
-		</property>
-		<relationship name="effectChain">
-			<destination>{2b7a4199-ca5b-4513-b658-d54e932d0177}</destination>
-		</relationship>
-		<relationship name="panner">
-			<destination>{76d64eb8-d2a2-452f-a15c-b03bb571bfc9}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{bf918411-f442-46d9-9ec5-30b6af64d516}</destination>
@@ -463,16 +425,10 @@ Value 0.4 = alot of wind</value>
 		<relationship name="effects">
 			<destination>{f559deee-4034-4f42-8148-53adeea3aa04}</destination>
 			<destination>{5b0ca99f-8f8a-418b-bf04-3096afe8237f}</destination>
+			<destination>{fa64ac92-a7f8-4ab0-846e-37d33a1bdd37}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d7e1f678-fa9d-4e4d-9fbe-35432f7ed764}" />
-	<object class="MixerBusEffectChain" id="{2b7a4199-ca5b-4513-b658-d54e932d0177}">
-		<relationship name="effects">
-			<destination>{977ebd6b-0ff4-4d2a-85b5-84bad168d859}</destination>
-			<destination>{1a110d9a-beb0-4219-81db-b60e1b34ea11}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusPanner" id="{76d64eb8-d2a2-452f-a15c-b03bb571bfc9}" />
 	<object class="MixerBusFader" id="{2414c971-f392-447b-89d3-e429c17e94c7}" />
 	<object class="AutomationPoint" id="{3751addf-8978-4a0f-aca1-8d58aed7515e}">
 		<property name="position">
@@ -621,13 +577,12 @@ Value 0.4 = alot of wind</value>
 			<value>0.581413805</value>
 		</property>
 	</object>
-	<object class="MixerBusFader" id="{977ebd6b-0ff4-4d2a-85b5-84bad168d859}" />
-	<object class="MultibandEqEffect" id="{1a110d9a-beb0-4219-81db-b60e1b34ea11}">
-		<property name="frequencyA">
-			<value>118.816147</value>
+	<object class="ThreeEQEffect" id="{fa64ac92-a7f8-4ab0-846e-37d33a1bdd37}">
+		<property name="lowGain">
+			<value>-80</value>
 		</property>
-		<property name="qualityA">
-			<value>0.539551735</value>
+		<property name="highGain">
+			<value>10</value>
 		</property>
 	</object>
 </objects>

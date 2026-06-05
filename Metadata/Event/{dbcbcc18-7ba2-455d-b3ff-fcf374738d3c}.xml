@@ -61,7 +61,7 @@ Similar to the ranged attack this sound also uses a slinky sound, however this i
 			<destination>{28467bc0-994e-47b9-a3aa-c5c08ecbea35}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{8e04c712-bed2-4081-8178-56ee3c0080df}</destination>
+			<destination>{a67b4fe1-ab2b-4a60-bf9c-c427880abb25}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{618997a2-5493-461b-b072-d134484203af}" />

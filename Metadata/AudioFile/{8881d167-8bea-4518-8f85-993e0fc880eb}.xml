@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{8881d167-8bea-4518-8f85-993e0fc880eb}">
 		<property name="assetPath">
-			<value>chomper_bite.wav</value>
+			<value>foley/chomper&amp;spitter/chomper_bite.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

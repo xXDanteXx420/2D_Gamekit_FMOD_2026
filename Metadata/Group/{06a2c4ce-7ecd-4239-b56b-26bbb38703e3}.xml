@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="MixerGroup" id="{06a2c4ce-7ecd-4239-b56b-26bbb38703e3}">
+		<property name="color">
+			<value>Red</value>
+		</property>
 		<property name="volume">
 			<value>-12.5</value>
 		</property>
